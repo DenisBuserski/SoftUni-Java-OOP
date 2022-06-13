@@ -1,0 +1,6 @@
+package BarracksWars_The_Commands_Strike_Back_04.contracts;
+
+public interface CommandInterpreter {
+
+	Executable interpretCommand(String[] data, String commandName);
+}
