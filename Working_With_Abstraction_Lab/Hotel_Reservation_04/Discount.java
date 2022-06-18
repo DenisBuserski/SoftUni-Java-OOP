@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Working_With_Abstraction_Lab.Hotel_Reservation_04;
+package Working_With_Abstraction_Lab.Hotel_Reservation_04;
 
 public enum Discount {
     VIP(0.20),
@@ -27,4 +27,5 @@ public enum Discount {
                 throw new IllegalArgumentException("Unknown discount type " + discount);
         }
     }
+    
 }
