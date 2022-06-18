@@ -1,10 +1,7 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Working_With_Abstraction_Lab.Point_In_Rectangle_02.Input;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Reader {
-
     public static Scanner scanner = new Scanner(System.in);
 
     public static int [] readIntArray(String delimiter) {
@@ -14,9 +11,7 @@ public class Reader {
     }
 
     public static String [] readStringArray(String delimiter) {
-
         return scanner.nextLine().split(delimiter);
     }
-
 
 }
