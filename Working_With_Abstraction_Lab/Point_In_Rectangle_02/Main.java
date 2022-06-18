@@ -1,7 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Working_With_Abstraction_Lab.Point_In_Rectangle_02;
-
-
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Working_With_Abstraction_Lab.Point_In_Rectangle_02.Input.Reader;
+import Working_With_Abstraction_Lab.Point_In_Rectangle_02.Input.Reader;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,11 +18,6 @@ public class Main {
 
             System.out.println(isWithin);
         }
-
-
-
-
-
 
     }
 }
