@@ -1,5 +1,3 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Working_With_Abstraction_Lab.Rhombus_Of_Stars_01;
-
 import java.util.Scanner;
 import java.util.function.Predicate;
 
@@ -52,4 +50,5 @@ public class Rhombus_Of_Stars {
         }
         return out.toString();
     }
+    
 }
