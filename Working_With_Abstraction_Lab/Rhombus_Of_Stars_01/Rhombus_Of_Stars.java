@@ -1,3 +1,5 @@
+package Working_With_Abstraction_Lab.Rhombus_Of_Stars_01;
+
 import java.util.Scanner;
 import java.util.function.Predicate;
 
@@ -7,9 +9,7 @@ public class Rhombus_Of_Stars {
         int size = readInput();
         String rombOfStars = buildRombOfStars(size);
         printOutput(rombOfStars);
-
     }
-
 
     private static void printOutput(String rombOfStars) {
         System.out.println(rombOfStars);
