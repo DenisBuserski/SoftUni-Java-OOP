@@ -1,10 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Working_With_Abstraction_Lab.Student_System_03;
+package Working_With_Abstraction_Lab.Student_System_03;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class StudentRepository {
-
     private Map<String, Student> studentsByName;
 
     public StudentRepository() {
@@ -22,4 +21,5 @@ public class StudentRepository {
     public Student get(String name) {
         return this.studentsByName.get(name);
     }
+    
 }
