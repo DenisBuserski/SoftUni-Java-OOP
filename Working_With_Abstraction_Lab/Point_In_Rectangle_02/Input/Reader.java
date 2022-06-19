@@ -1,3 +1,5 @@
+package Working_With_Abstraction_Lab.Point_In_Rectangle_02;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
