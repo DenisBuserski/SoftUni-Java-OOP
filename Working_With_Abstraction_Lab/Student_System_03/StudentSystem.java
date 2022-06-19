@@ -8,14 +8,12 @@ public class StudentSystem {
 
     public StudentSystem() {
         this.handler = new CommandHandler();
-
     }
 
     public void start() {
         this.isWorking = true;
         while (isWorking) {
             String result = handler.handleCommand(Reader.readStringArray("\\s+"));
-
             if (result != null && !result.equals("Exit")) {
                 printLine(result);
             }
