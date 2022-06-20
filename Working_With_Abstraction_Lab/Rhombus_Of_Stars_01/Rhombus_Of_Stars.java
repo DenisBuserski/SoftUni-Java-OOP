@@ -14,6 +14,7 @@ public class Rhombus_Of_Stars {
     private static void printOutput(String rombOfStars) {
         System.out.println(rombOfStars);
     }
+    
     private static int readInput() {
         return Integer.parseInt(new Scanner(System.in).nextLine());
     }
