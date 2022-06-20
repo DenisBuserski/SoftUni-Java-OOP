@@ -23,6 +23,6 @@ public class Light {
                 this.color = Color.RED;
                 break;
         }
-
     }
+    
 }
