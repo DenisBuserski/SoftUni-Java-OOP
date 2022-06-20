@@ -25,7 +25,6 @@ public class CommandHandler {
             }
         }
         return tokens[0];
-
     }
 
 }
