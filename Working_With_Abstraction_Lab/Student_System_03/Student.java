@@ -21,7 +21,6 @@ public class Student {
         } else {
             comment = "Very nice person.";
         }
-
     }
 
     public String getName() {
