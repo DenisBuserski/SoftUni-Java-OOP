@@ -38,4 +38,5 @@ public class StarsManipulator {
         }
         return sum;
     }
+    
 }
