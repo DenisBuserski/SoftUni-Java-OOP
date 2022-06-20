@@ -17,7 +17,7 @@ public enum CardRanks {
 
     private int value;
 
-    CardRanks(int value) {
+    public CardRanks(int value) {
         this.value = value;
     }
 
