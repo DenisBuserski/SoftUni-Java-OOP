@@ -8,7 +8,7 @@ public enum CardSuits {
 
     private int value;
 
-    CardSuits(int  value) {
+    public CardSuits(int  value) {
         this.value = value;
     }
 
