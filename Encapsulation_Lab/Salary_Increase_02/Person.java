@@ -1,4 +1,4 @@
-package Encapsulation_Lab.SalaryIncrease_02;
+package Encapsulation_Lab.Salary_Increase_02;
 
 public class Person {
     private String firstName;
