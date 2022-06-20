@@ -13,7 +13,6 @@ public class Bag {
     private long totalCash;
     private boolean goldIsAdded;
 
-
     public Bag(long capacity) {
         this.capacity = capacity;
         this.currentWeight = 0;
@@ -72,37 +71,44 @@ public class Bag {
         if (this.gems.size() > 0) {
             sb.append("<Gem> $").append(this.totalGems).append(System.lineSeparator());
 
-            this.gems.entrySet().stream().sorted((f, s) -> {
-                int result = s.getKey().compareTo(f.getKey());
-                if (result == 0) {
-                    result = f.getValue().compareTo(s.getValue());
-                }
-                return result;
-            }).forEach(entry -> {
-                sb.append("##")
+            this.gems.entrySet()
+                .stream()
+                .sorted((f, s) -> {
+                    int result = s.getKey().compareTo(f.getKey());
+                    if (result == 0) {
+                        result = f.getValue().compareTo(s.getValue());
+                    }
+                    return result;
+                })
+                .forEach(entry -> {
+                    sb.append("##")
                         .append(entry.getKey())
                         .append(" - ")
                         .append(entry.getValue())
                         .append(System.lineSeparator());
-            });
+                });
         }
+        
         if (this.cash.size() > 0) {
             sb.append("<Cash> $").append(this.totalCash).append(System.lineSeparator());
-            this.cash.entrySet().stream().sorted((f, s) -> {
-                int result = s.getKey().compareTo(f.getKey());
-                if (result == 0) {
-                    result = f.getValue().compareTo(s.getValue());
-                }
-                return result;
-            }).forEach(entry -> {
-                sb.append("##")
+            this.cash.entrySet()
+                .stream()
+                .sorted((f, s) -> {
+                    int result = s.getKey().compareTo(f.getKey());
+                    if (result == 0) {
+                        result = f.getValue().compareTo(s.getValue());
+                    }
+                    return result;
+                })
+                .forEach(entry -> {
+                    sb.append("##")
                         .append(entry.getKey())
                         .append(" - ")
                         .append(entry.getValue())
                         .append(System.lineSeparator());
-            });
+                });
         }
-
         return sb.toString();
     }
+    
 }
