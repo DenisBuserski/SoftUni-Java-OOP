@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Shopping_Spree_03;
+package Encapsulation_Exercises.Shopping_Spree_03;
 
 public class Product {
     private String name;
@@ -30,4 +30,5 @@ public class Product {
         }
         this.cost = cost;
     }
+    
 }
