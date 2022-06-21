@@ -1,0 +1,33 @@
+package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Shopping_Spree_03;
+
+public class Product {
+    private String name;
+    private double cost;
+
+    public Product(String name, double cost) {
+        this.setName(name);
+        this.setCost(cost);
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    private void setName(String name) {
+        if (name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Name cannot be empty");
+        }
+        this.name = name;
+    }
+
+    public double getCost() {
+        return this.cost;
+    }
+
+    private void setCost(double cost) {
+        if (cost < 0) {
+            throw new IllegalArgumentException("Money cannot be negative");
+        }
+        this.cost = cost;
+    }
+}
