@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Animal_Farm_02;
+package Encapsulation_Exercises.Animal_Farm_02;
 
 import java.util.Scanner;
 
@@ -16,8 +16,7 @@ public class Main {
             System.out.println(exception.getMessage());
             return;
         }
+        
         System.out.println(chicken.toString());
-
-
     }
 }
