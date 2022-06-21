@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Football_Team_Generator_05;
+package Encapsulation_Exercises.Football_Team_Generator_05;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +38,5 @@ public class Team {
     public double getRating() {
         return players.stream().mapToDouble(Player::overallSkillLevel).average().orElse(0.0);
     }
-
 
 }
