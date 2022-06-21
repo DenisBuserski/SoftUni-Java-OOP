@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Animal_Farm_02;
+package Encapsulation_Exercises.Animal_Farm_02;
 
 public class Chicken {
     private String name;
@@ -38,10 +38,8 @@ public class Chicken {
     }
 
     @Override
-
     public String toString() {
-        return String.format("Chicken %s (age %d) can produce %.2f eggs per day.",
-                        this.name, this.age, this.productPerDay());
+        return String.format("Chicken %s (age %d) can produce %.2f eggs per day.", this.name, this.age, this.productPerDay());
     }
 
 }
