@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Football_Team_Generator_05;
+package Encapsulation_Exercises.Football_Team_Generator_05;
 
 public class Player {
     private String name;
@@ -48,7 +48,6 @@ public class Player {
         this.passing = passing;
     }
 
-
     private void setShooting(final int shooting) {
         throwException(shooting, "Shooting should be between 0 and 100.");
         this.shooting = shooting;
@@ -63,6 +62,5 @@ public class Player {
             throw new IllegalArgumentException(message);
         }
     }
-
 
 }
