@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Shopping_Spree_03;
+package Encapsulation_Exercises.Shopping_Spree_03;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,4 +41,5 @@ public class Person {
             throw new IllegalArgumentException(message);
         }
     }
+    
 }
