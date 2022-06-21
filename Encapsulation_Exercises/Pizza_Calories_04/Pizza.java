@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Pizza_Calories_04;
+package Encapsulation_Exercises.Pizza_Calories_04;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +43,6 @@ public class Pizza {
     public double getOverallCalories() {
         return this.dough.calculateCalories() +
                 this.toppings.stream().mapToDouble(Topping::calculateCalories).sum();
-
     }
+    
 }
