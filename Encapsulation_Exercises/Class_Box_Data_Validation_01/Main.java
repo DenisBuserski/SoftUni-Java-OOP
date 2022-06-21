@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Class_Box_Data_Validation_01;
+package Encapsulation_Exercises.Class_Box_Data_Validation_01;
 
 import java.util.Scanner;
 
