@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Encapsulation_Exercises.Football_Team_Generator_05;
+package Encapsulation_Exercises.Football_Team_Generator_05;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -9,7 +9,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         StringBuilder sb = new StringBuilder();
-
         Map<String, Team> teams = new LinkedHashMap<>();
 
         String input = scanner.nextLine();
@@ -37,11 +36,11 @@ public class Main {
 
             input = scanner.nextLine();
         }
+        
         System.out.println(sb.toString().trim());
     }
 
     private static void getRating(StringBuilder sb, Map<String, Team> teams, String[] tokens) {
-
         if (!teams.containsKey(tokens[1])) {
             sb.append(String.format("Team %s does not exist.%n", tokens[1]));
         } else {
@@ -50,7 +49,6 @@ public class Main {
     }
 
     private static void removePlayer(StringBuilder sb, Map<String, Team> teams, String[] tokens) {
-
         if (teams.get(tokens[1]).hasPlayer(tokens[2])) {
             teams.get(tokens[1]).removePlayer(tokens[2]);
         } else {
@@ -59,7 +57,6 @@ public class Main {
     }
 
     private static void addPlayer(StringBuilder sb, Map<String, Team> teams, String[] tokens) {
-
         if (teams.containsKey(tokens[1])) {
             Player player = new Player(
                     tokens[2],
@@ -68,7 +65,6 @@ public class Main {
                     Integer.parseInt(tokens[5]),
                     Integer.parseInt(tokens[6]),
                     Integer.parseInt(tokens[7]));
-
             teams.get(tokens[1]).addPlayer(player);
         } else {
             sb.append(String.format("Team %s does not exist.%n", tokens[1]));
