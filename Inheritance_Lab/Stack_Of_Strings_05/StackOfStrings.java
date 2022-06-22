@@ -1,9 +1,8 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Inheritance_Lab.Stack_Of_Strings_05;
+package Inheritance_Lab.Stack_Of_Strings_05;
 
 import java.util.ArrayList;
 
 public class StackOfStrings {
-
     private ArrayList<String> data;
 
     public StackOfStrings() {
@@ -22,12 +21,8 @@ public class StackOfStrings {
         return this.data.get(0);
     }
 
-
-
-
     public boolean isEmpty() {
         return this.data.isEmpty();
     }
-
 
 }
