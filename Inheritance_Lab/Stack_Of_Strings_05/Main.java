@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Inheritance_Lab.Stack_Of_Strings_05;
+package Inheritance_Lab.Stack_Of_Strings_05;
 
 public class Main {
     public static void main(String[] args) {
