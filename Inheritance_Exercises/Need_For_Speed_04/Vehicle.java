@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Inheritance_Exercises.Need_For_Speed_04;
+package Inheritance_Exercises.Need_For_Speed_04;
 
 public class Vehicle {
     private static final double DEFAULT_FUEL_CONSUMPTION = 1.25;
@@ -13,7 +13,6 @@ public class Vehicle {
     }
 
     public void drive(double kilometers) {
-
         double consumedFuel = kilometers * this.fuelConsumption;
         if (this.fuel >= consumedFuel) {
             double leftFuel = this.fuel - consumedFuel;
@@ -44,4 +43,5 @@ public class Vehicle {
     public void setHorsePower(int horsePower) {
         this.horsePower = horsePower;
     }
+    
 }
