@@ -1,5 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Inheritance_Exercises.Animals_06;
-
+package Inheritance_Exercises.Animals_06;
 
 public class Kitten extends Cat {
     private static final String GENDER = "Female";
@@ -12,4 +11,5 @@ public class Kitten extends Cat {
     public String produceSound() {
         return "Meow";
     }
+    
 }
