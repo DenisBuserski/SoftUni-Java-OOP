@@ -1,7 +1,6 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Interfaces_And_Abstraction_Lab.Car_Shop_01;
+package Interfaces_And_Abstraction_Lab.Car_Shop_01;
 
 public class Seat implements Car {
-
     private String model;
     private String color;
     private Integer horsepower;
@@ -36,7 +35,7 @@ public class Seat implements Car {
 
     @Override
     public String toString() {
-        return String.format("This is %s produced in %s and have %d tires",
-                model, countryProduced, TIRES);
+        return String.format("This is %s produced in %s and have %d tires", model, countryProduced, TIRES);
     }
+    
 }
