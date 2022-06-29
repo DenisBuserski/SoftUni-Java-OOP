@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Interfaces_And_Abstraction_Lab.Border_Control_05;
+package Interfaces_And_Abstraction_Lab.Border_Control_05;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,6 @@ public class Main {
         String line = scanner.nextLine();
 
         List<Identifiable> identifiables = new ArrayList<>();
-
 
         while (!line.equals("End")) {
             String [] tokens = line.split("\\s+");
@@ -29,15 +28,11 @@ public class Main {
 
         String fakeIdPostFix = scanner.nextLine();
 
-
         for (Identifiable identifiable : identifiables) {
             if (identifiable.getId().endsWith(fakeIdPostFix)) {
                 System.out.println(identifiable.getId());
             }
         }
-
-
-
 
     }
 }
