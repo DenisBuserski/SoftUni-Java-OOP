@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Interfaces_And_Abstraction_Exercises.Define_An_Interface_Person_01;
+package Interfaces_And_Abstraction_Exercises.Define_An_Interface_Person_01;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -10,7 +10,6 @@ public class Main {
         Class[] citizenInterfaces = Citizen.class.getInterfaces();
 
         if (Arrays.asList(citizenInterfaces).contains(Person.class)) {
-
             Method[] methods = Person.class.getDeclaredMethods();
             Scanner scanner = new Scanner(System.in);
             String name = scanner.nextLine();
