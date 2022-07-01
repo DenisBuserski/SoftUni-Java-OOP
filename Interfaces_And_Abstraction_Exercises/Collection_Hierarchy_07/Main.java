@@ -1,10 +1,8 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Interfaces_And_Abstraction_Exercises.Collection_Hierarchy_07;
+package Interfaces_And_Abstraction_Exercises.Collection_Hierarchy_07;
 
-
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Interfaces_And_Abstraction_Exercises.Collection_Hierarchy_07.Entities.AddCollection;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Interfaces_And_Abstraction_Exercises.Collection_Hierarchy_07.Entities.AddRemoveCollection;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Interfaces_And_Abstraction_Exercises.Collection_Hierarchy_07.Entities.MyListImpl;
-
+import Interfaces_And_Abstraction_Exercises.Collection_Hierarchy_07.Entities.AddCollection;
+import Interfaces_And_Abstraction_Exercises.Collection_Hierarchy_07.Entities.AddRemoveCollection;
+import Interfaces_And_Abstraction_Exercises.Collection_Hierarchy_07.Entities.MyListImpl;
 import java.util.Scanner;
 
 public class Main {
@@ -13,7 +11,6 @@ public class Main {
         AddCollection addCollection = new AddCollection();
         AddRemoveCollection addRemoveCollection = new AddRemoveCollection();
         MyListImpl myList = new MyListImpl();
-
         Scanner scan = new Scanner(System.in);
 
         String[] tokens = scan.nextLine().split("\\s+");
@@ -42,6 +39,7 @@ public class Main {
             String removeItem2 = myList.remove();
             sb5.append(removeItem2).append(" ");
         }
+        
         System.out.println(sb1.toString().trim());
         System.out.println(sb2.toString().trim());
         System.out.println(sb3.toString().trim());
