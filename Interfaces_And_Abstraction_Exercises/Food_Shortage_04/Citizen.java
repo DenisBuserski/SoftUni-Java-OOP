@@ -1,5 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Interfaces_And_Abstraction_Exercises.Food_Shortage_04;
-
+package Interfaces_And_Abstraction_Exercises.Food_Shortage_04;
 
 public class Citizen implements Person, Buyer, Identifiable {
     private String name;
@@ -15,7 +14,6 @@ public class Citizen implements Person, Buyer, Identifiable {
         this.birthDate = birthDate;
         this.food = 0;
     }
-
 
     @Override
     public String getName() {
@@ -41,4 +39,5 @@ public class Citizen implements Person, Buyer, Identifiable {
     public String getId() {
         return this.id;
     }
+    
 }
