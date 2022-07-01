@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Interfaces_And_Abstraction_Exercises.Food_Shortage_04;
+package Interfaces_And_Abstraction_Exercises.Food_Shortage_04;
 
 public class Rebel implements Buyer, Person {
     private String name;
@@ -12,7 +12,6 @@ public class Rebel implements Buyer, Person {
         this.group = group;
         this.food = 0;
     }
-
 
     @Override
     public void buyFood() {
@@ -37,4 +36,5 @@ public class Rebel implements Buyer, Person {
     public String getGroup() {
         return this.group;
     }
+    
 }
