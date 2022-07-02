@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Lab.Shapes_02;
+package Polymorphism_Lab.Shapes_02;
 
 public class Rectangle extends Shape {
     private Double height;
@@ -15,7 +15,6 @@ public class Rectangle extends Shape {
     protected void calculatePerimeter() {
         Double result = height * 2 + width * 2;
         super.setArea(result);
-
     }
 
     @Override
@@ -31,4 +30,5 @@ public class Rectangle extends Shape {
     public Double getWidth() {
         return width;
     }
+    
 }
