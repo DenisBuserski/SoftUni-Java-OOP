@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Lab.Shapes_02;
+package Polymorphism_Lab.Shapes_02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,5 +18,6 @@ public class Main {
             System.out.println(s.getArea());
             System.out.println(s.getPerimeter());
         }
+        
     }
 }
