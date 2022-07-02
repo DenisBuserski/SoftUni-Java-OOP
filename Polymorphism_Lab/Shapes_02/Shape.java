@@ -1,7 +1,6 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Lab.Shapes_02;
+package Polymorphism_Lab.Shapes_02;
 
 public abstract class Shape {
-
     private Double perimeter;
     private Double area;
 
@@ -23,4 +22,5 @@ public abstract class Shape {
     public Double getArea() {
         return area;
     }
+    
 }
