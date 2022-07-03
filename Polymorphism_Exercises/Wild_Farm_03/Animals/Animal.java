@@ -1,8 +1,6 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Wild_Farm_03.Animals;
+package Polymorphism_Exercises.Wild_Farm_03.Animals;
 
-
-
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Wild_Farm_03.Foods.Food;
+import Polymorphism_Exercises.Wild_Farm_03.Foods.Food;
 
 import java.text.DecimalFormat;
 
@@ -40,4 +38,5 @@ public abstract class Animal {
                 this.livingRegion,
                 this.foodEaten);
     }
+    
 }
