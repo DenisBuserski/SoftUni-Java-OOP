@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Vehicles_Extension_02;
+package Polymorphism_Exercises.Vehicles_Extension_02;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -16,7 +16,6 @@ public class Main {
         Bus bus = createBus(scanner.nextLine().split("\\s+"));
 
         vehicleMap.put("Bus", bus);
-
 
         int commandsCount = Integer.parseInt(scanner.nextLine());
         while (commandsCount-- > 0) {
@@ -38,8 +37,6 @@ public class Main {
         }
 
         vehicleMap.values().stream().map(Vehicle::toString).forEach(System.out::println);
-
-
     }
 
     private static Bus createBus(String [] tokens) {
@@ -58,4 +55,5 @@ public class Main {
                 throw new IllegalStateException("Unknown vehicle type for " + tokens[0]);
         }
     }
+    
 }
