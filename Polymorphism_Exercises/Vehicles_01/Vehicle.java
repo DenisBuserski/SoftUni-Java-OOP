@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Vehicles_01;
+package Polymorphism_Exercises.Vehicles_01;
 
 import java.text.DecimalFormat;
 
@@ -10,7 +10,6 @@ public class Vehicle {
         this.fuel = fuel;
         this.consumption = consumption;
     }
-
 
     public String drive(double distance) {
         double fuelNeeded = distance * this.consumption;
@@ -32,4 +31,5 @@ public class Vehicle {
     public String toString() {
         return String.format("%s: %.2f", this.getClass().getSimpleName(), this.fuel);
     }
+    
 }
