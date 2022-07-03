@@ -1,10 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Wild_Farm_03;
+package Polymorphism_Exercises.Wild_Farm_03;
 
-
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Wild_Farm_03.Animals.*;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Wild_Farm_03.Foods.Food;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Wild_Farm_03.Foods.Meat;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Wild_Farm_03.Foods.Vegetable;
+import Polymorphism_Exercises.Wild_Farm_03.Animals.*;
+import Polymorphism_Exercises.Wild_Farm_03.Foods.Food;
+import Polymorphism_Exercises.Wild_Farm_03.Foods.Meat;
+import Polymorphism_Exercises.Wild_Farm_03.Foods.Vegetable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +32,6 @@ public class Main {
 
             animalList.add(animal);
 
-
             evenLine = scanner.nextLine();
         }
 
@@ -48,7 +46,6 @@ public class Main {
     }
 
     private static Animal createAnimal(String[] tokens) {
-
         switch (tokens[0]) {
             case "Cat":
                 return new Cat(tokens[1], "Cat", Double.parseDouble(tokens[2]), tokens[3], tokens[4]);
@@ -62,4 +59,5 @@ public class Main {
                 throw new IllegalStateException("Unknown animal type " + tokens[0]);
         }
     }
+    
 }
