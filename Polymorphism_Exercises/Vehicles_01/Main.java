@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Vehicles_01;
+package Polymorphism_Exercises.Vehicles_01;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -33,7 +33,6 @@ public class Main {
         for (Vehicle vehicle : vehicleMap.values()) {
             System.out.println(vehicle.toString());
         }
-
 
     }
 }
