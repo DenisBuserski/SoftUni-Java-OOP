@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Vehicles_Extension_02;
+package Polymorphism_Exercises.Vehicles_Extension_02;
 
 import java.text.DecimalFormat;
 import java.util.function.Supplier;
@@ -23,7 +23,6 @@ public class Vehicle {
 //    }
 
     protected <T> T doWithIncreasedConsumption(double additionalConsumption, Supplier<T> supplier) {
-
         this.consumption += additionalConsumption;
         try {
             return supplier.get();
@@ -33,7 +32,6 @@ public class Vehicle {
             this.consumption -= additionalConsumption;
         }
     }
-
 
     public void setFuel(double fuel) {
         validateNonNegativeFuel(fuel);
@@ -75,4 +73,5 @@ public class Vehicle {
     public String toString() {
         return String.format("%s: %.2f", this.getClass().getSimpleName(), this.fuel);
     }
+    
 }
