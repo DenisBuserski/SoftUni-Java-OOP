@@ -1,10 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Word_04;
+package Polymorphism_Exercises.Word_04;
 
-
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Word_04.TextTransforms.CutTransform;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Word_04.TextTransforms.PasteTransform;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Word_04.TextTransforms.TextTransform;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Polymorphism_Exercises.Word_04.TextTransforms.ToUpperTransform;
+import Polymorphism_Exercises.Word_04.TextTransforms.CutTransform;
+import Polymorphism_Exercises.Word_04.TextTransforms.PasteTransform;
+import Polymorphism_Exercises.Word_04.TextTransforms.TextTransform;
+import Polymorphism_Exercises.Word_04.TextTransforms.ToUpperTransform;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +11,6 @@ import java.util.List;
 import java.util.Map;
 
 public class CommandImpl implements CommandInterface {
-
     private Map<String, TextTransform> commandTransforms;
     private StringBuilder text;
 
@@ -32,7 +30,6 @@ public class CommandImpl implements CommandInterface {
     @Override
     public void handleInput(String input) {
         String[] tokens = input.split("\\s+");
-
         String commandName = tokens[0];
         int startInd = Integer.parseInt(tokens[1]);
         int endInd = Integer.parseInt(tokens[2]);
@@ -51,4 +48,5 @@ public class CommandImpl implements CommandInterface {
 
         return commands;
     }
+    
 }
