@@ -1,9 +1,8 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p01_SingleResponsibility.p01_DrawingShape;
+package Solid_Lab.p01_SingleResponsibility.p01_DrawingShape;
 
-
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.DrawingRepository;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Rengerer;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Shape;
+import Solid_Lab.p01_SingleResponsibility.p01_DrawingShape.interfaces.DrawingRepository;
+import Solid_Lab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Rengerer;
+import Solid_Lab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Shape;
 
 public class Rectangle implements Shape {
     private double width;
@@ -37,6 +36,6 @@ public class Rectangle implements Shape {
     @Override
     public void draw(Rengerer rengerer, DrawingRepository drawingRepository) {
         rengerer.render(drawingRepository,this);
-
     }
+    
 }
