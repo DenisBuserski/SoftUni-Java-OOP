@@ -1,12 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p02_OpenClosedPrinciple.p01_FileStream;
+package Solid_Lab.p02_OpenClosedPrinciple.p01_FileStream;
 
 public class Music {
     private int length;
-
     private int sent;
-
     private String Artist;
-
     private String Album;
 
     public int getLength() {
@@ -40,4 +37,5 @@ public class Music {
     public void setAlbum(String album) {
         Album = album;
     }
+    
 }
