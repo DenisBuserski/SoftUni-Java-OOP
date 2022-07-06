@@ -1,16 +1,12 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p04_InterfaceSegregation.p02_identity;
+package Solid_Lab.p04_InterfaceSegregation.p02_identity;
 
-
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p04_InterfaceSegregation.p02_identity.interfaces.Account;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p04_InterfaceSegregation.p02_identity.interfaces.User;
+import Solid_Lab.p04_InterfaceSegregation.p02_identity.interfaces.Account;
+import Solid_Lab.p04_InterfaceSegregation.p02_identity.interfaces.User;
 
 public class AccountManager implements Account {
     private boolean requireUniqueEmail;
-
     private int minRequiredPasswordLength;
-
     private int maxRequiredPasswordLength;
-
 
     @Override
     public boolean getRequireUniqueEmail() {
@@ -56,4 +52,5 @@ public class AccountManager implements Account {
     public User getUserByName(String name) {
         throw new UnsupportedOperationException();
     }
+    
 }
