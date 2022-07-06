@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p03_LiskovSubstitution.p01_Square;
+package Solid_Lab.p03_LiskovSubstitution.p01_Square;
 
 public class Square extends Rectangle {
 
@@ -21,4 +21,5 @@ public class Square extends Rectangle {
     public void setHeight(double height) {
         super.setHeight(height);
     }
+    
 }
