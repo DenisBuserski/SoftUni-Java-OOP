@@ -1,11 +1,10 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p02_OpenClosedPrinciple.p03_ShoppingCart;
+package Solid_Lab.p02_OpenClosedPrinciple.p03_ShoppingCart;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
     private final List<OrderItem> items;
-
     public String custmerEmail;
 
     public Cart() {
@@ -15,7 +14,6 @@ public class Cart {
     public Iterable<OrderItem> getItems() {
         return new ArrayList<OrderItem>(this.items);
     }
-
 
     public String getCustmerEmail() {
         return this.custmerEmail;
@@ -32,8 +30,7 @@ public class Cart {
     public double getTotalAmount() {
         double total = 0;
 
-        for(var item : this.items)
-        {
+        for(var item : this.items) {
             if (item.getSku().startsWith("EACH")) {
                 total += item.getQuantity() * 5.0;
             } else if (item.getSku().startsWith("WEIGHT")) {
@@ -51,4 +48,5 @@ public class Cart {
 
         return total;
     }
+    
 }
