@@ -1,9 +1,8 @@
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.enums.ReportLevel;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.Appender;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.Layout;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.Logger;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.models.loggers.MessageLogger;
-
+import enums.ReportLevel;
+import interfaces.Appender;
+import interfaces.Layout;
+import interfaces.Logger;
+import models.loggers.MessageLogger;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -12,7 +11,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
 
 //        Layout simpleLayout = new SimpleLayout();
 //        Layout simpleLayout = new XmlLayout();
@@ -94,4 +92,5 @@ public class Main {
         Class clazz = Class.forName("Logger_SOLID.models.layouts." + layoutName);
         return (Layout) clazz.getConstructor().newInstance();
     }
+    
 }
