@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p05_DependencyInversion.p01_HelloWord;
+package Solid_Lab.p05_DependencyInversion.p01_HelloWord;
 
 public class Main {
     public static void main(String[] args) {
