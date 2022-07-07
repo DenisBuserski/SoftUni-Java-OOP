@@ -1,6 +1,6 @@
 package models.files;
 
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.File;
+import interfaces.File;
 
 public class LogFile implements File {
     private int size;
@@ -21,8 +21,8 @@ public class LogFile implements File {
         this.size += getTextSize(text);
     }
 
-
     private int getTextSize(String text) {
         return text.chars().filter(x -> Character.isAlphabetic(x)).sum();
     }
+    
 }
