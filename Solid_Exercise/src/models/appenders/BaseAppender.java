@@ -1,8 +1,8 @@
 package models.appenders;
 
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.enums.ReportLevel;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.Appender;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.Layout;
+import enums.ReportLevel;
+import interfaces.Appender;
+import interfaces.Layout;
 
 public abstract class BaseAppender implements Appender {
     private Layout layout;
@@ -31,14 +31,13 @@ public abstract class BaseAppender implements Appender {
         this.reportLevel = reportLevel;
     }
 
-
     @Override
     public String toString() {
-        return String.format
-                ("Appender type: %s, Layout type: %s, Report level: %s, Messages appended: %d",
+        return String.format("Appender type: %s, Layout type: %s, Report level: %s, Messages appended: %d",
                         this.getClass().getSimpleName(),
                         this.layout.getClass().getSimpleName(),
                         this.reportLevel.toString(),
                         this.messageAppendedCount);
     }
+    
 }
