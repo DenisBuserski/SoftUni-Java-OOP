@@ -1,6 +1,6 @@
 package models.appenders;
 
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.Layout;
+import interfaces.Layout;
 
 public class ConsoleAppender extends BaseAppender {
 
@@ -12,4 +12,5 @@ public class ConsoleAppender extends BaseAppender {
     protected void append(String text) {
         System.out.println(text);
     }
+    
 }
