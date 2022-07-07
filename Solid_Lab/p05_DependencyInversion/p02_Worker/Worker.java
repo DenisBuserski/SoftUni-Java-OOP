@@ -1,7 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.solidLab.p05_DependencyInversion.p02_Worker;
+package Solid_Lab.p05_DependencyInversion.p02_Worker;
 
 public class Worker {
+    
     public void work(){
         //work
     }
+    
 }
