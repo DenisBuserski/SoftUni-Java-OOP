@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Lab.Product;
+package Design_Patterns_Lab.Product;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,8 +11,10 @@ public class Main {
 
         System.out.println(product);
     }
+    
     private static void execute(ModifyPrice modifyPrice, Command productCommand){
         modifyPrice.setCommand(productCommand);
         modifyPrice.invoke();
     }
+    
 }
