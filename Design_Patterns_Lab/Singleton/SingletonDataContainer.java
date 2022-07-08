@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Lab.Singleton;
+package Design_Patterns_Lab.Singleton;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,12 +7,10 @@ public class SingletonDataContainer implements SingletonContainer {
     private static SingletonDataContainer instance;
     private Map<String,Integer> capitals;
 
-
     private SingletonDataContainer() {
         this.capitals = new HashMap<>();
         System.out.println("Initializing singleton object");
     }
-
 
     public int getPopulation(Map<String, Integer> capitals, String name) {
         return capitals.get(name);
@@ -25,5 +23,5 @@ public class SingletonDataContainer implements SingletonContainer {
         instance = new SingletonDataContainer();
         return instance;
     }
+    
 }
-
