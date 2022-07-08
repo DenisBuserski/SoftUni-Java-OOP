@@ -1,17 +1,15 @@
 package models.loggers;
 
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.enums.ReportLevel;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.Appender;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.Logger;
+import enums.ReportLevel;
+import interfaces.Appender;
+import interfaces.Logger;
 
 public class MessageLogger implements Logger {
-
     private Appender[] appenders;
 
     public MessageLogger(Appender... appender) {
         this.appenders = appender;
     }
-
 
     @Override
     public void logInfo(String dateTime, String message) {
@@ -42,7 +40,6 @@ public class MessageLogger implements Logger {
         for (Appender appender : this.appenders) {
             appender.appendMessage(dateTime, reportLevel, message);
         }
-
     }
 
     @Override
@@ -52,9 +49,7 @@ public class MessageLogger implements Logger {
         for (Appender appender : this.appenders) {
             sb.append(System.lineSeparator()).append(appender);
         }
-
         return sb.toString();
     }
-
 
 }
