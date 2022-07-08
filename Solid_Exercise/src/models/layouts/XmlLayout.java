@@ -1,6 +1,6 @@
 package models.layouts;
 
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Solid.Logger_SOLID.interfaces.Layout;
+import interfaces.Layout;
 
 public class XmlLayout implements Layout {
 
@@ -19,4 +19,5 @@ public class XmlLayout implements Layout {
 
         return sb.toString();
     }
+    
 }
