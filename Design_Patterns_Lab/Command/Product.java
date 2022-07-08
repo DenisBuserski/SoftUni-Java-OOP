@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Lab.Command;
+package Design_Patterns_Lab.Command;
 
 public class Product {
     private String name;
@@ -37,4 +37,5 @@ public class Product {
     public String toString() {
         return String.format("Current price for the %s product is %d$.%n",this.name, this.price);
     }
+    
 }
