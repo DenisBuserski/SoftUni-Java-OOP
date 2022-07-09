@@ -1,7 +1,7 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.core;
+package Factory_pattern.core;
 
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.model.GameObject;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.model.Initializer;
+import Factory_pattern.model.GameObject;
+import Factory_pattern.model.Initializer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,11 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-
         gameObjects = Initializer.init();
-
-
-
 
         boolean gameOver = false;
 
@@ -28,9 +24,6 @@ public class Main {
             }
 
             Thread.sleep(2000);
-
-
-
         }
 
     }
