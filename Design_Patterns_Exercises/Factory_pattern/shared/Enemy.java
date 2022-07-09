@@ -1,9 +1,8 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.shared;
+package Factory_pattern.shared;
 
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.model.GameObject;
+import Factory_pattern.model.GameObject;
 
 public class Enemy implements GameObject {
-
     private int healthPoints;
     private int damage;
 
@@ -21,4 +20,5 @@ public class Enemy implements GameObject {
     public void render() {
         System.out.println("Enemy rendered");
     }
+    
 }
