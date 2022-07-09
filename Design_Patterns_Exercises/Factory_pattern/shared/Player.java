@@ -1,12 +1,11 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.shared;
+package Factory_pattern.shared;
 
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.core.Main;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.model.GameObject;
+import Factory_pattern.core.Main;
+import Factory_pattern.model.GameObject;
 
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Player implements GameObject {
-
     private int healthPoints;
     private int damage;
     private Factory factory;
@@ -33,4 +32,5 @@ public class Player implements GameObject {
     public void render() {
         System.out.println("Player rendered");
     }
+    
 }
