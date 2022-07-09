@@ -1,7 +1,7 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.model;
+package Factory_pattern.model;
 
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.data.DataStorage;
-import JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_OOP.Java_OOP_Exercises.Design_Patterns_Exercises.Factory_pattern.shared.*;
+import Factory_pattern.data.DataStorage;
+import Factory_pattern.shared.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,4 +18,5 @@ public class Initializer {
 
         return multiple.produce();
     }
+    
 }
