@@ -32,5 +32,4 @@ public class Axe implements Weapon {
         this.durabilityPoints -= DURABILITY_LOSS;
     }
 
-
 }
