@@ -1,14 +1,11 @@
 package ex;
 
 import org.junit.Test;
-
 import java.util.List;
-
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 public class HeroTest {
-
 
     @Test
     public void testHeroGainsExperienceWhenTargetDies() {
@@ -22,7 +19,6 @@ public class HeroTest {
 
         assertEquals(100, hero.getExperience());
     }
-
 
     @Test
     public void testWhenHeroKillsTargetInventoryShouldAddNewLoot() {
@@ -39,7 +35,6 @@ public class HeroTest {
         Weapon loot = inventory.get(0);
         assertEquals(37, loot.getAttackPoints());
         assertEquals(43, loot.getDurabilityPoints());
-
     }
 
     @Test
@@ -55,8 +50,5 @@ public class HeroTest {
         Weapon weapon = mock(Weapon.class);
         Hero hero = new Hero("Java", weapon);
         assertEquals(weapon, hero.getWeapon());
-    }
-
-
-
+    } 
 }
