@@ -2,7 +2,6 @@ package ex;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import static ex.Axe.DURABILITY_LOSS;
 import static org.junit.Assert.*;
 
