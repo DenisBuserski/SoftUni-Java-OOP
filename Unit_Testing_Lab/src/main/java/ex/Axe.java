@@ -31,5 +31,4 @@ public class Axe implements Weapon {
         target.takeAttack(this.attackPoints);
         this.durabilityPoints -= DURABILITY_LOSS;
     }
-
 }
