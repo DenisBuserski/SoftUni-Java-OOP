@@ -3,7 +3,6 @@ package ex;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
-
 import static org.junit.Assert.*;
 
 public class DummyTest {
@@ -39,7 +38,4 @@ public class DummyTest {
     public void testAliveDummyShouldNotGiveExperience() {
         dummy.giveExperience();
     }
-
-
-
 }
