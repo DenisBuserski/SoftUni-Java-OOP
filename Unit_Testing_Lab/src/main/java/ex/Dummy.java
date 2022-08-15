@@ -44,4 +44,5 @@ public class Dummy implements Target {
         Random random = new Random();
         return new Axe(random.nextInt(100), random.nextInt(100));
     }
+    
 }
